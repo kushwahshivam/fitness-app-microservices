@@ -4,7 +4,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/fitness_user_db
+#    url: jdbc:postgresql://localhost:5432/fitness_user_db
+#    url : jdbc:postgresql://fitness-user-db.col6ywkuoevc.us-east-1.rds.amazonaws.com/fitness_user_db
+    url: ${JDBC_DATABASE_URL}
     username: postgres
     password: root
 
